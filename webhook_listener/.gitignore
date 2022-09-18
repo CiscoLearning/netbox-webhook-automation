@@ -1,0 +1,3 @@
+# Ignore the credentials.py file to ensure no actual secrets are stored
+# in your git repository
+credentials.py
