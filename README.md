@@ -207,6 +207,7 @@ See if you can add more functionality or create your own webhook listeners for o
 ### Additional resources:
 - [NetBox-Community GitHub repository](https://github.com/netbox-community/netbox) contains the source for NetBox as well as project information
 - [NetBox documentation site](https://docs.netbox.dev/en/stable/) contains everything NetBox-related - from downloading to advanced configuration.
+- [Python Flask documentation](https://flask.palletsprojects.com/en/2.2.x/) - Flask is used as the API listener in this project. The documentation site includes quickstart guides, reference material, and code examples.
 - [pynetbox - Python API client library for NetBox](https://pynetbox.readthedocs.io/en/latest/) has many examples of using pynetbox to interact with NetBox using Python.
 - [Cisco YANG Suite](https://developer.cisco.com/yangsuite/) - Browse YANG models interactively! If you're getting started with YANG models, this tool is *very* useful.
 
