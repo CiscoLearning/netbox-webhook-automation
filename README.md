@@ -142,7 +142,7 @@ Press CTRL+C to quit
    - CA File path: None (leave empty)
 
 4. When completed, your configuration should appear similar to the following:
-![Interface webhook configuration example](https://github.com/CiscoLearning/netbox-webhook-automation/blob/main/static/img/08_interface_webhook_config.png)
+![Interface webhook configuration example](https://github.com/CiscoLearning/netbox-webhook-automation/blob/main/static/img/02_interface_webhook_config.png)
 
 ### Create a webhook for IPAM updates:
 1. Return to the Webhook configuration screen (**Other** -> **Webhooks**)
@@ -154,7 +154,7 @@ Press CTRL+C to quit
    - URL: IP/Port of the receiver but the path is **/api/update-address**
 
 4. When complete, your webhook configuration for the IP address should appear as follows:
-![IPAM webhook configuration example](https://github.com/CiscoLearning/netbox-webhook-automation/blob/main/static/img/10_ipam_webhook_config.png)
+![IPAM webhook configuration example](https://github.com/CiscoLearning/netbox-webhook-automation/blob/main/static/img/03_ipam_webhook_config.png)
 
 ## Test it!
 When you create, update, or delete an IP address or an interface in NetBox, a webhook should be created and your Flask application should display some output. It might not do anything at first, which is OK!
