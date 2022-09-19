@@ -1,0 +1,67 @@
+{
+  'event': 'created',
+  'timestamp': '2022-09-12 18:14:18.353747+00:00',
+  'model': 'ipaddress',
+  'username': 'admin',
+  'request_id': 'bc8bf1d7-74fe-4b9d-be04-6b0002500883',
+  'data': {
+    'id': 11,
+    'url': '/api/ipam/ip-addresses/11/',
+    'display': '192.168.222.22/24',
+    'family': {
+      'value': 4,
+      'label': 'IPv4'
+    },
+    'address': '192.168.222.22/24',
+    'vrf': None,
+    'tenant': None,
+    'status': {
+      'value': 'active',
+      'label': 'Active'
+    },
+    'role': None,
+    'assigned_object_type': 'dcim.interface',
+    'assigned_object_id': 162,
+    'assigned_object': {
+      'id': 162,
+      'url': '/api/dcim/interfaces/162/',
+      'display': 'GigabitEthernet2',
+      'device': {
+        'id': 57,
+        'url': '/api/dcim/devices/57/',
+        'display': 'access-router',
+        'name': 'access-router'
+      },
+      'name': 'GigabitEthernet2',
+      'cable': None,
+      '_occupied': False
+    },
+    'nat_inside': None,
+    'nat_outside': None,
+    'dns_name': '',
+    'description': '',
+    'tags': [],
+    'custom_fields': {},
+    'created': '2022-09-12T18:14:18.326253Z',
+    'last_updated': '2022-09-12T18:14:18.326268Z'
+  },
+  'snapshots': {
+    'prechange': None,
+    'postchange': {
+      'created': '2022-09-12T18:14:18.326Z',
+      'last_updated': '2022-09-12T18:14:18.326Z',
+      'address': '192.168.222.22/24',
+      'vrf': None,
+      'tenant': None,
+      'status': 'active',
+      'role': '',
+      'assigned_object_type': 32,
+      'assigned_object_id': 162,
+      'nat_inside': None,
+      'dns_name': '',
+      'description': '',
+      'custom_fields': {},
+      'tags': []
+    }
+  }
+}

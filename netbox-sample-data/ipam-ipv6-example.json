@@ -1,0 +1,41 @@
+{
+  'id': 9,
+  'url': '/api/ipam/ip-addresses/9/',
+  'display': '2001:db8::1:1/64',
+  'family': {
+    'value': 6,
+    'label': 'IPv6'
+  },
+  'address': '2001:db8::1:1/64',
+  'vrf': None,
+  'tenant': None,
+  'status': {
+    'value': 'active',
+    'label': 'Active'
+  },
+  'role': None,
+  'assigned_object_type': 'dcim.interface',
+  'assigned_object_id': 162,
+  'assigned_object': {
+    'id': 162,
+    'url': '/api/dcim/interfaces/162/',
+    'display': 'GigabitEthernet2',
+    'device': {
+      'id': 57,
+      'url': '/api/dcim/devices/57/',
+      'display': 'access-router',
+      'name': 'access-router'
+    },
+    'name': 'GigabitEthernet2',
+    'cable': None,
+    '_occupied': False
+  },
+  'nat_inside': None,
+  'nat_outside': None,
+  'dns_name': '',
+  'description': 'ffaa',
+  'tags': [],
+  'custom_fields': {},
+  'created': '2022-09-12T13:56:14.124057Z',
+  'last_updated': '2022-09-12T15:24:25.765164Z'
+}

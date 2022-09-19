@@ -1,0 +1,162 @@
+{
+    "event": "updated",
+    "timestamp": "2022-09-09 17:11:46.389375+00:00",
+    "model": "interface",
+    "username": "admin",
+    "request_id": "154c1cea-7db5-4605-a69a-f61f5dbb6994",
+    "data": {
+        "id": 124,
+        "url": "/api/dcim/interfaces/124/",
+        "display": "radio0 (AP-Label-here)",
+        "device": {
+            "id": 42,
+            "url": "/api/dcim/devices/42/",
+            "display": "APMCO11N32 (31907)",
+            "name": "APMCO11N32"
+        },
+        "module": null,
+        "name": "radio0",
+        "label": "AP-Label-here",
+        "type": {
+            "value": "ieee802.11n",
+            "label": "IEEE 802.11n"
+        },
+        "enabled": true,
+        "parent": null,
+        "bridge": null,
+        "lag": null,
+        "mtu": 1500,
+        "mac_address": "12:34:AB:CD:10:AA",
+        "speed": 54,
+        "duplex": {
+            "value": "full",
+            "label": "Full"
+        },
+        "wwn": "10:00:00:90:FA:25:37:D6",
+        "mgmt_only": false,
+        "description": "radio0 interface",
+        "mode": {
+            "value": "tagged-all",
+            "label": "Tagged (All)"
+        },
+        "rf_role": {
+            "value": "ap",
+            "label": "Access point"
+        },
+        "rf_channel": {
+            "value": "2.4g-11-2462-22",
+            "label": "11 (2462 MHz)"
+        },
+        "rf_channel_frequency": 2462.0,
+        "rf_channel_width": 22.0,
+        "tx_power": 12,
+        "untagged_vlan": null,
+        "tagged_vlans": [],
+        "mark_connected": false,
+        "cable": null,
+        "wireless_link": null,
+        "link_peer": null,
+        "link_peer_type": null,
+        "wireless_lans": [],
+        "vrf": null,
+        "connected_endpoint": null,
+        "connected_endpoint_type": null,
+        "connected_endpoint_reachable": null,
+        "tags": [
+            {
+                "id": 1,
+                "url": "/api/extras/tags/1/",
+                "display": "test-tag-1",
+                "name": "test-tag-1",
+                "slug": "test-tag-1",
+                "color": "9e9e9e"
+            }
+        ],
+        "custom_fields": {
+            "wlc_rf_channel": "11"
+        },
+        "created": "2022-08-10T18:33:59.103325Z",
+        "last_updated": "2022-09-09T17:11:46.295105Z",
+        "count_ipaddresses": 0,
+        "count_fhrp_groups": 0,
+        "_occupied": false
+    },
+    "snapshots": {
+        "prechange": {
+            "created": "2022-08-10T18:33:59.103Z",
+            "last_updated": "2022-08-27T23:49:37.374Z",
+            "device": 42,
+            "name": "radio0",
+            "label": "",
+            "description": "radio0 interface",
+            "module": null,
+            "cable": null,
+            "mark_connected": false,
+            "enabled": true,
+            "mac_address": "12:34:AB:CD:10:AA",
+            "mtu": null,
+            "mode": "",
+            "parent": null,
+            "bridge": null,
+            "lag": null,
+            "type": "ieee802.11n",
+            "mgmt_only": false,
+            "speed": null,
+            "duplex": null,
+            "wwn": null,
+            "rf_role": "ap",
+            "rf_channel": "2.4g-11-2462-22",
+            "rf_channel_frequency": null,
+            "rf_channel_width": "22.000",
+            "tx_power": 12,
+            "wireless_link": null,
+            "untagged_vlan": null,
+            "vrf": null,
+            "wireless_lans": [],
+            "tagged_vlans": [],
+            "custom_fields": {
+                "wlc_rf_channel": "11"
+            },
+            "tags": []
+        },
+        "postchange": {
+            "created": "2022-08-10T18:33:59.103Z",
+            "last_updated": "2022-09-09T17:11:46.295Z",
+            "device": 42,
+            "name": "radio0",
+            "label": "AP-Label-here",
+            "description": "radio0 interface",
+            "module": null,
+            "cable": null,
+            "mark_connected": false,
+            "enabled": true,
+            "mac_address": "12:34:AB:CD:10:AA",
+            "mtu": 1500,
+            "mode": "tagged-all",
+            "parent": null,
+            "bridge": null,
+            "lag": null,
+            "type": "ieee802.11n",
+            "mgmt_only": false,
+            "speed": 54,
+            "duplex": "full",
+            "wwn": "10:00:00:90:FA:25:37:D6",
+            "rf_role": "ap",
+            "rf_channel": "2.4g-11-2462-22",
+            "rf_channel_frequency": "2462.00",
+            "rf_channel_width": "22.000",
+            "tx_power": 12,
+            "wireless_link": null,
+            "untagged_vlan": null,
+            "vrf": null,
+            "wireless_lans": [],
+            "tagged_vlans": [],
+            "custom_fields": {
+                "wlc_rf_channel": "11"
+            },
+            "tags": [
+                "test-tag-1"
+            ]
+        }
+    }
+}

@@ -1,0 +1,69 @@
+{
+  'event': 'updated',
+  'timestamp': '2022-09-12 20:56:17.833015+00:00',
+  'model': 'ipaddress',
+  'username': 'admin',
+  'request_id': '9140766a-8a53-495b-9c1c-ada2a5e0725e',
+  'data': {
+    'id': 13,
+    'url': '/api/ipam/ip-addresses/13/',
+    'display': '192.168.222.23/24',
+    'family': {
+      'value': 4,
+      'label': 'IPv4'
+    },
+    'address': '192.168.222.23/24',
+    'vrf': None,
+    'tenant': None,
+    'status': {
+      'value': 'active',
+      'label': 'Active'
+    },
+    'role': None,
+    'assigned_object_type': None,
+    'assigned_object_id': None,
+    'assigned_object': None,
+    'nat_inside': None,
+    'nat_outside': None,
+    'dns_name': '',
+    'description': '',
+    'tags': [],
+    'custom_fields': {},
+    'created': '2022-09-12T20:56:07.668753Z',
+    'last_updated': '2022-09-12T20:56:17.813177Z'
+  },
+  'snapshots': {
+    'prechange': {
+      'created': '2022-09-12T20:56:07.668Z',
+      'last_updated': '2022-09-12T20:56:07.668Z',
+      'address': '192.168.222.23/24',
+      'vrf': None,
+      'tenant': None,
+      'status': 'active',
+      'role': '',
+      'assigned_object_type': 32,
+      'assigned_object_id': 162,
+      'nat_inside': None,
+      'dns_name': '',
+      'description': '',
+      'custom_fields': {},
+      'tags': []
+    },
+    'postchange': {
+      'created': '2022-09-12T20:56:07.668Z',
+      'last_updated': '2022-09-12T20:56:17.813Z',
+      'address': '192.168.222.23/24',
+      'vrf': None,
+      'tenant': None,
+      'status': 'active',
+      'role': '',
+      'assigned_object_type': None,
+      'assigned_object_id': None,
+      'nat_inside': None,
+      'dns_name': '',
+      'description': '',
+      'custom_fields': {},
+      'tags': []
+    }
+  }
+}
