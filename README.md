@@ -125,31 +125,36 @@ Press CTRL+C to quit
 ![Webhook configuration link](https://github.com/CiscoLearning/netbox-webhook-automation/blob/main/static/img/01_netbox_webhook_menu.png)
 
 2. On the Webhooks configuration page, click **+ Add** in the top right corner to create a new webhook.
+
 3. Complete the following fields to add a new webhook:
    - Name: Provide a useful name such as **interface-webhook**
-   - Content types: **DCIM > interface**<br/>![Webhook content type: interface selector](https://github.com/CiscoLearning/netbox-webhook-automation/blob/main/static/img/02_webhook_interface_selector.png)
+   - Content types: **DCIM > interface**
    - Enabled: **checked** to enable the webhook.
    - Events: **Creations**, **Updates**, and **Deletions**
    - URL: Enter the IP or hostname of the system running the webhook listener, the port, and the default path for the interface listener which is ```/api/update-interface```. An example URL would be **http://192.168.1.2:19703/api/update-interface**
    - HTTP method: **POST**
    - HTTP content type: **application/json**
-   - Additional headers: None (leave empty)<br/>![Webhook additional header configuration](https://github.com/CiscoLearning/netbox-webhook-automation/blob/main/static/img/03_webhook_addtl_headers.png)
-   - Body template: None (leave empty)<br/>![Webhook body template configuration](https://github.com/CiscoLearning/netbox-webhook-automation/blob/main/static/img/04_webhook_body_template.png)
-   - Secret: None (leave empty)<br/>![Webhook secret configuration](https://github.com/CiscoLearning/netbox-webhook-automation/blob/main/static/img/05_webhook_secret.png)
-   - Conditions: null (do not change the default)<br/>![Webhook condition configuration](https://github.com/CiscoLearning/netbox-webhook-automation/blob/main/static/img/06_webhook_conditions.png)
+   - Additional headers: None (leave empty)
+   - Body template: None (leave empty)
+   - Secret: None (leave empty)
+   - Conditions: null (do not change the default)
    - SSL verification: irrelevant (the application is not configured to use TLS)
-   - CA File path: None (leave empty)<br/>![Webhook TLS settings](https://github.com/CiscoLearning/netbox-webhook-automation/blob/main/static/img/07_webhook_tls_settings.png)
+   - CA File path: None (leave empty)
+
 4. When completed, your configuration should appear similar to the following:
-![Interface webhook configuration example](https://github.com/CiscoLearning/netbox-webhook-automation/blob/main/static/img/08_interface_webhook_config.png)
+![Interface webhook configuration example](https://github.com/CiscoLearning/netbox-webhook-automation/blob/main/static/img/02_interface_webhook_config.png)
 
 ### Create a webhook for IPAM updates:
 1. Return to the Webhook configuration screen (**Other** -> **Webhooks**)
+
 2. Click **+ Add** to create another webhook
+
 3. Add a description name and follow the same steps as for the interface webhook, but note the following important differences:
-   - Content types: **IPAM > IP address**<br/>![Webhook content type: IP address selector](https://github.com/CiscoLearning/netbox-webhook-automation/blob/main/static/img/09_webhook_ipam_selector.png)
+   - Content types: **IPAM > IP address**
    - URL: IP/Port of the receiver but the path is **/api/update-address**
+
 4. When complete, your webhook configuration for the IP address should appear as follows:
-![IPAM webhook configuration example](https://github.com/CiscoLearning/netbox-webhook-automation/blob/main/static/img/10_ipam_webhook_config.png)
+![IPAM webhook configuration example](https://github.com/CiscoLearning/netbox-webhook-automation/blob/main/static/img/03_ipam_webhook_config.png)
 
 ## Test it!
 When you create, update, or delete an IP address or an interface in NetBox, a webhook should be created and your Flask application should display some output. It might not do anything at first, which is OK!
